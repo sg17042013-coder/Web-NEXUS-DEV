@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08091b"><title>NEXUS DEV — Crea sin límites</title>
+<link rel="icon" href="assets/nexus-logo.svg"><link rel="stylesheet" href="css/styles.css">
+<script src="js/script.js" defer></script></head><body>
+<header><a class="brand" href="#inicio"><img src="assets/nexus-logo.svg" alt=""><span>NEXUS <b>DEV</b><small>CREATIVE LAB</small></span></a>
+<button id="menuToggle" aria-label="Abrir menú">☰</button><nav id="mainNav"><a href="#servicios">Servicios</a><a href="#nosotros">Sobre nosotros</a><a href="#solicitud">Contacto</a><a class="navbtn" href="#solicitud">¡Vamos allá! ↗</a></nav></header>
+<main>
+<section class="hero" id="inicio"><div class="hero-copy"><span class="pill">✦ DESARROLLO · DISEÑO · CREATIVIDAD</span>
+<h1>Ideas grandes.<br><span>Proyectos brutales.</span></h1><p>Bots de Discord, texturas, diseños y proyectos digitales hechos a tu estilo. Tú traes la idea; NEXUS le da forma.</p>
+<div class="actions"><a class="btn primary" href="#solicitud">Solicita tu proyecto ↗</a><a class="btn secondary" href="#servicios">Ver servicios ↓</a></div>
+<div class="stats"><div><b>∞</b><small>Ideas posibles</small></div><div><b>✦</b><small>Diseños únicos</small></div><div><b>⌘</b><small>Bots a medida</small></div></div></div>
+<div class="hero-art"><div class="glow"></div><div class="photo-card"><div class="photo-top"><span>● NEXUS CORE</span><span>ONLINE*</span></div>
+<img class="nexus-photo" src="assets/nexus-photo.png" alt="Foto de NEXUS" onerror="this.style.display='none';document.getElementById('placeholder').style.display='grid'">
+<div id="placeholder"><img src="assets/nexus-logo.svg" alt=""><b>AQUÍ VA LA FOTO DE NEXUS</b><small>Reemplaza este espacio con tu imagen.</small></div><div class="photo-bottom">✦ CREATIVIDAD SIN LÍMITES <span>NX / 001</span></div></div>
+<div class="sticker one">IDEAS<br>ON FIRE ✦</div><div class="sticker two">MADE<br>FOR YOU ↗</div></div></section>
+<div class="ticker"><div>✦ BOTS DE DISCORD　 ✦ TEXTURAS　 ✦ DISEÑO DIGITAL　 ✦ IDEAS LOCAS　 ✦ BOTS DE DISCORD　 ✦ TEXTURAS　 ✦ DISEÑO DIGITAL</div></div>
+<section class="section" id="servicios"><div class="heading"><span>ELIGE TU AVENTURA ✷</span><h2>¿Qué vamos a <em>crear hoy?</em></h2><p>De una idea rápida a un proyecto bien montado. Elige tu punto de partida.</p></div>
+<div class="cards">
+<article class="card lilac"><div class="icon">⌘</div><small>01 / DISCORD</small><h3>Bots con<br>superpoderes.</h3><p>Moderación, tickets, economía, asistencia y comandos personalizados para tu comunidad.</p><button class="choose" data-service="Bot de Discord">Quiero un bot ↗</button></article>
+<article class="card blue"><div class="icon">▧</div><small>02 / DISEÑO</small><h3>Que tu estilo<br>se note.</h3><p>Texturas, uniformes, liveries y recursos visuales para destacar.</p><button class="choose" data-service="Textura o diseño">Quiero un diseño ↗</button></article>
+<article class="card pink"><div class="icon">✧</div><small>03 / PROYECTOS</small><h3>¿Y si hacemos<br>algo nuevo?</h3><p>Webs, herramientas y otras ideas. Cuéntanos qué tienes en mente.</p><button class="choose" data-service="Otro proyecto">Tengo una idea ↗</button></article>
+</div></section>
+<section class="section steps" id="nosotros"><div class="heading"><span>FÁCIL Y DIRECTO</span><h2>Tres pasos. <em>A crear.</em></h2></div><div class="steps-grid"><article><b>01 ✦</b><h3>Suelta la idea</h3><p>Cuéntanos qué necesitas, aunque no lo tengas todo claro.</p></article><article><b>02 ✦</b><h3>Le damos forma</h3><p>Concretamos estilo, funciones y detalles del proyecto.</p></article><article><b>03 ✦</b><h3>¡A por ello!</h3><p>Acordamos los siguientes pasos contigo.</p></article></div></section>
+<section class="contact section" id="solicitud"><div><span class="eyebrow">TU TURNO ✷</span><h2>Vamos a hacer<br>algo <em>brutal.</em></h2><p>Rellena el formulario y prepara un mensaje listo para copiar y enviar al equipo de NEXUS DEV.</p><div class="note">💡 <span><b>¿No tienes todo pensado?</b><small>No pasa nada, cuéntanos la idea que tienes.</small></span></div></div>
+<form id="requestForm"><div class="form-title">✦ NUEVA SOLICITUD <small>NEXUS / FORM</small></div>
+<label for="name">¿Cómo te llamamos?</label><input id="name" name="name" required maxlength="80" placeholder="Nombre o usuario de Discord">
+<label for="service">¿Qué necesitas?</label><select id="service" name="service" required><option value="">Elige un servicio...</option><option>Bot de Discord</option><option>Textura o diseño</option><option>Web</option><option>Otro proyecto</option></select>
+<label for="platform">Plataforma o juego <small>(opcional)</small></label><input id="platform" name="platform" maxlength="100" placeholder="Discord, Roblox, ER:LC...">
+<label for="details">Cuéntanos tu idea</label><textarea id="details" name="details" rows="5" required maxlength="1500" placeholder="Funciones, estilo, ejemplos..."></textarea>
+<button class="btn primary" type="submit">Preparar solicitud ↗</button><small class="hint">No se envían datos automáticamente: podrás copiar el mensaje y mandarlo tú.</small>
+<div id="formResult" hidden><b>¡Solicitud preparada! ✦</b><textarea id="requestOutput" rows="7" readonly></textarea><button class="btn secondary" id="copyRequest" type="button">Copiar mensaje</button><p id="copyStatus"></p></div></form></section>
+</main><footer><a class="brand" href="#inicio"><img src="assets/nexus-logo.svg" alt=""><span>NEXUS <b>DEV</b><small>CREATIVE LAB</small></span></a><p>Conecta ideas. Crea posibilidades. ✦</p><small>© <span id="year"></span> NEXUS DEV · Hecho para crear.</small></footer>
+</body></html>
